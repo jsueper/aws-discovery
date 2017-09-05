@@ -1,4 +1,10 @@
 var fork = require('child_process').fork;
+require('dotenv').config()
+
+
+
+console.log(process.env.DB_HOST);
+
 
 var child = fork(__dirname + '/sqs.js');
 
@@ -8,4 +14,4 @@ child.on('message', function(m) {
 });
 
 
-child.send({ cmd: 'sqs', account: 23432423 });
+child.send({ cmd: 'sqs', account: 23432423, iamrole: 'cross-account-role' });
