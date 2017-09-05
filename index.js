@@ -6,7 +6,7 @@ require('dotenv').config()
 console.log(process.env.DB_HOST);
 
 
-var child = fork(__dirname + '/sqs.js');
+var child = fork(__dirname + '/aws-resource-discovery/sqs.js');
 
 child.on('message', function(m) {
     console.log('The result is: ', m.data);
