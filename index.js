@@ -1,5 +1,6 @@
+"use strict";
 var fork = require('child_process').fork;
-require('dotenv').config()
+require('dotenv').config();
 
 
 

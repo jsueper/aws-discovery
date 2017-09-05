@@ -26,6 +26,7 @@
   "homepage": "https://github.com/jsueper/aws-discovery#readme",
   "devDependencies": {
     "chai": "^4.1.2",
+    "jshint": "^2.9.5",
     "mocha": "^3.5.0"
   },
   "dependencies": {
