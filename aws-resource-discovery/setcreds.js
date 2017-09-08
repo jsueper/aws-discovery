@@ -1,9 +1,6 @@
 "use strict";
 var AWS = require('aws-sdk');
 
-
-
-
 process.on('message', function(m) {
 
 
