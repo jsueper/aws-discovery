@@ -61,3 +61,10 @@ typings/
 
 .idea
 
+
+# idea settings
+
+.vscode
+
+
+.vscode/launch.json

@@ -1,35 +1,35 @@
 {
-  "name": "discovery",
-  "version": "0.1.0",
-  "description": "Lambda function to crawl accounts and regions for AWS service to create item prototypes in Zabbix",
-  "main": "index.js",
-  "directories": {
-    "example": "examples",
-    "test": "test"
-  },
-  "scripts": {
-    "test": "make test"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/jsueper/aws-discovery.git"
-  },
-  "keywords": [
-    "aws",
-    "discovery"
-  ],
-  "author": "Joe Sueper",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/jsueper/aws-discovery/issues"
-  },
-  "homepage": "https://github.com/jsueper/aws-discovery#readme",
-  "devDependencies": {
-    "chai": "^4.1.2",
-    "jshint": "^2.9.5",
-    "mocha": "^3.5.0"
-  },
-  "dependencies": {
-    "dotenv": "^4.0.0"
-  }
+    "name": "discovery",
+    "version": "0.1.0",
+    "description": "Lambda function to crawl accounts and regions for AWS service to create item prototypes in Zabbix",
+    "main": "index.js",
+    "directories": {
+        "example": "examples",
+        "test": "test"
+    },
+    "scripts": {
+        "test": "make test"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/jsueper/aws-discovery.git"
+    },
+    "keywords": [
+        "aws",
+        "discovery"
+    ],
+    "author": "Joe Sueper",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/jsueper/aws-discovery/issues"
+    },
+    "homepage": "https://github.com/jsueper/aws-discovery#readme",
+    "devDependencies": {
+        "chai": "^4.1.2",
+        "jshint": "^2.9.5",
+        "mocha": "^3.5.0"
+    },
+    "dependencies": {
+        "dotenv": "^4.0.0"
+    }
 }

@@ -1,11 +1,11 @@
 Create a `.env` file in the root directory of your project. Add
 environment-specific variables on new lines in the form of `NAME=VALUE`.
-For example:
+As Below:
 
 ```dosini
-DB_HOST=localhost
-DB_USER=root
-DB_PASS=s1mpl3
+accesskey=xyz
+secretkey=abc/abc
+accountnumbers=[1234,43345]
 ```
 
 That's it.
