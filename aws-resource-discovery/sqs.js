@@ -31,11 +31,10 @@ process.on('message', function(m) {
 
                     if (data.QueueUrls) {
                         console.log("Success:", data);
-                        process.send({ result: 'sqslist', gooddata: data.QueueUrls, accountId: m.accountId, crossAccountRole: m.crossAccountRole, region: m.region, resourceParams: m.resourceParams });
+                        process.send({ result: 'sqslist', data: data.QueueUrls, accountId: m.accountId, crossAccountRole: m.crossAccountRole, region: m.region, resourceParams: m.resourceParams });
                         return;
                     } else if (!data.QueueUrls) {
                         console.log("None Found:", 'No SQS Queues found in ' + m.region + ' under AWS Account ' + m.accountId + ' using IAM role ' + m.crossAccountRole);
-                        //  process.send({ result: 'sqslist', baddata: 'No SQS Found' });
                         return;
                     }
 

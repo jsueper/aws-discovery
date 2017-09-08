@@ -17,12 +17,12 @@ var accountscount = 0;
 
 sqs.on('message', function(m) {
     if (m.result === 'sqslist') {
-        console.log('The result is: ', m.gooddata);
-        sqslistcount = (sqslistcount + m.gooddata.length);
+        console.log('The result is: ', m.data);
+        sqslistcount = (sqslistcount + m.data.length);
 
-        for (var i = 0, len = m.gooddata.length; i < len; i++) {
+        for (var i = 0, len = m.data.length; i < len; i++) {
 
-            sqs.send({ cmd: 'getmetrics', crossAccountRole: m.crossAccountRole, queueUrl: m.gooddata[i], accountId: m.accountId, region: m.region, resourceParams: m.resourceParams });
+            sqs.send({ cmd: 'getmetrics', crossAccountRole: m.crossAccountRole, queueUrl: m.data[i], accountId: m.accountId, region: m.region, resourceParams: m.resourceParams });
         }
     }
 
